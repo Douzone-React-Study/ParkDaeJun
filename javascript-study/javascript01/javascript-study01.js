@@ -343,6 +343,6 @@ console.log(arrr1.join(""));
 // reduce
 // accumulator 와 current 를 파라미터로 가져와서 결과를
 // 반환하는 콜백함수, 두번째 파라미터는 reduce 함수에서
-// 사용 할 초깃값.
+// 사용 할 초깃값
 let sum = arrr1.reduce((accumulator, current) => accumulator + current, 0);
 console.log(sum);
