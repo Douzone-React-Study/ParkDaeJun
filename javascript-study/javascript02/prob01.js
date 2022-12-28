@@ -1,5 +1,5 @@
 /** 자연수 뒤집어 배열로 만들기*/
-function solution(n) {
+function solution(n) { 
   const arr = String(n).split("");
   let len = arr.length;
   const answer = [];
