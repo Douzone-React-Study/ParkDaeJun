@@ -1,5 +1,5 @@
 /** 하샤드 수*/
-function solution(x) { 
+function solution(x) {
   let sum = 0;
   const arr = String(x).split("");
 
@@ -12,6 +12,10 @@ function solution(x) {
   //   });
 
   //   arr.reduce((sum, i) => sum + Number(arr[i]));
+
+  //   const sum = Number(arr.reduce(
+  //     (accumulator, currentNumber) => accumulator + currentNumber
+  //   ));
 
   return x % sum === 0 ? true : false;
 }
