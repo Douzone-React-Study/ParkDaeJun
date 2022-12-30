@@ -341,8 +341,11 @@ console.log(arrr1.concat(arrr2));
 console.log(arrr1.join(""));
 
 // reduce
-// accumulator 와 current 를 파라미터로 가져와서 결과를
-// 반환하는 콜백함수, 두번째 파라미터는 reduce 함수에서
-// 사용 할 초깃값
-let sum = arrr1.reduce((accumulator, current) => accumulator + current, 0);
-console.log(sum);
+// numbers.reduce((누산값, 현재요소값, 현재요소의index, 현재배열) => {
+//   return 다음누산값;
+// }, 초기누산값);
+const n = [1, 2, 3, 4];
+const sum1 = n.reduce((acc, el, i) => {
+  return acc + el
+}, 0)
+console.log(sum1);
